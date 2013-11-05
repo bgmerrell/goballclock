@@ -1,8 +1,8 @@
 package ballholders
 
 import (
-	"github.com/bgmerrell/goballclock/ball"
 	"fmt"
+	"github.com/bgmerrell/goballclock/ball"
 	"testing"
 )
 

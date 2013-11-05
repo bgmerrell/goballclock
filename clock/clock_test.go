@@ -1,8 +1,8 @@
 package clock
 
 import (
-	"github.com/bgmerrell/goballclock/ballholders"
 	"fmt"
+	"github.com/bgmerrell/goballclock/ballholders"
 	"testing"
 )
 
@@ -70,11 +70,11 @@ func TestUpdateClockState(t *testing.T) {
 		16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 3, 2, 1, 0, -1}
 
 	if fmt.Sprintf("%v", actual) != fmt.Sprintf("%v", expected) {
-			t.Fatalf("Unexpected queue state\n"+
-				"Actual: %v\n"+
-				"Expected: %v",
-				actual,
-				expected)
+		t.Fatalf("Unexpected queue state\n"+
+			"Actual: %v\n"+
+			"Expected: %v",
+			actual,
+			expected)
 	}
 	// ...And we should see the 4 ball show up on the next rail down
 	actual = fiveMinRail.GetTestRepr()
@@ -115,7 +115,7 @@ func TestUpdateClockState(t *testing.T) {
 		t.Fatalf("Expected queue to be full")
 	}
 	// Check rail states
-	for n, rail := range([]ballholders.Rail{oneMinRail, fiveMinRail, hourRail}) {
+	for n, rail := range []ballholders.Rail{oneMinRail, fiveMinRail, hourRail} {
 		actual = rail.GetTestRepr()
 		for i := 0; i < len(actual); i++ {
 			if actual[i] != -1 {

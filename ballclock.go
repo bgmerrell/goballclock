@@ -6,11 +6,11 @@ Parse command line arguments and let the fun begin!
 package main
 
 import (
-	"github.com/bgmerrell/goballclock/clock"
 	"bufio"
 	"errors"
 	"flag"
 	"fmt"
+	"github.com/bgmerrell/goballclock/clock"
 	"os"
 	"path"
 	"strconv"

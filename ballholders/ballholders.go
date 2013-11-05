@@ -8,8 +8,8 @@ are Rails, and both are BallHolders.
 package ballholders
 
 import (
-	"github.com/bgmerrell/goballclock/ball"
 	"container/ring"
+	"github.com/bgmerrell/goballclock/ball"
 )
 
 // A BallHolder is a thing that holds Balls
