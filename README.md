@@ -17,7 +17,7 @@ The program takes input from stdin, so after running the above command, simply
 provide input (i.e., number of balls for the clock) and press enter.
 Alternatively, you can process several inputs by doing something like this:
 
-cat clock-input.txt | goballclock > output.txt
+	cat clock-input.txt | goballclock > output.txt
 
 Where clock-input.txt is a text file containing one input per line.
 
